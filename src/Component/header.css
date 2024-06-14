@@ -1,27 +1,81 @@
+
+/* Apply Pacifico font family to the entire body */
+body {
+  background-color: #ECF0F1; /* Light Gray */
+  color: black; /* Dark Gray */
+  font-family: 'Pacifico', cursive;
+  font-weight: 300; /* Make the font thinner */
+  margin: 0;
+  padding: 0;
+}
+
 .header {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-}
-
-.header .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.header .nav-links {
+  background-color: #BB8FCE; /* Light Gray */
+  padding: 20px;
   display: flex;
-  justify-content: center;
-  margin: 10px 0;
+  justify-content: space-between;
+  align-items: center; /* Center align items vertically */
+  border-bottom: 1px solid #eaeaea;
 }
 
-.header .nav-links a {
-  color: #F1C40F;
+.logo {
+  font-size: 2em;
+  color: black; /* Deep Purple */
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+  font-weight: 300; /* Make the font thinner */
+}
+
+.nav {
+  margin-top: 10px;
+}
+
+.nav-item {
+  display: inline-block;
   margin: 0 15px;
+  color: black; /* Pink */
   text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+  font-family: 'Pacifico', cursive;
+  font-weight: 300; /* Make the font thinner */
 }
 
-.header .nav-links a:hover {
-  text-decoration: underline;
+.nav-item:hover {
+  color: #566573; /* Yellow */
+}
+
+/* Specific styling for blog posts to maintain consistency with the Pacifico font */
+.blog-post h2, .post h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 300; /* Make the font thinner */
+}
+
+.blog-post p, .post p, .post-content {
+  font-size: 1em;
+  font-family: 'Pacifico', cursive;
+  font-weight: 300; /* Make the font thinner */
+}
+
+button {
+  background-color: #BB8FCE;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  font-weight: 300; /* Make the font thinner */
+}
+
+button:hover {
+  background-color: #566573;
+}
+
+button + button {
+  margin-left: 10px;
 }

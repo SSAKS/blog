@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Pacifico', cursive;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.post {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    flex-grow: 1;
+}
+
+.post h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.post img {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.post-content {
+    margin-top: 10px;
+    font-size: 0.9em;
+    font-weight: 100;
+    color: #555;
+}
+
+.post-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.like-button .far.fa-heart {
+    color: #ccc;
+    font-size: 1.5em;
+}
+
+.like-button .fas.fa-heart {
+    color: red;
+    font-size: 1.5em;
+}
+
+.like-button .liked {
+    color: red;
+}
+
+button {
+    background-color: #BB8FCE;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 100;
+    font-family: 'Pacifico', cursive;
+}
+
+button:hover {
+    background-color: #566573;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+.post-image {
+    transition: transform 0.3s ease;
+}
+
+.post-image:hover {
+    transform: scale(1.1);
+}
